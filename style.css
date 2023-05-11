@@ -1,0 +1,123 @@
+:root {
+  --Violet: hsl(257, 40%, 49%);
+  --Soft-Magenta: hsl(300, 69%, 71%);
+}
+body {
+  background-image: url(images/bg-desktop.svg);
+  background-color: var(--Violet);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+.header {
+  margin: 2rem 0 3rem 3rem;
+}
+.main {
+  display: flex;
+}
+
+.right-section h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding-right: 6rem;
+  margin-bottom: 0;
+}
+.right-section p {
+  font-family: "Open Sans", sans-serif;
+  padding-right: 4rem;
+}
+.left-section img {
+  height: 90%;
+  margin-left: 3rem;
+}
+.btn {
+  border: none;
+  width: 10rem;
+  height: 3rem;
+  border-radius: 30px;
+  color: var(--Violet);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 3rem 3rem 0;
+}
+.footer .fa-brands {
+  color: #fff;
+  font-size: 2.5rem;
+  margin-left: 15px;
+}
+.btn:hover {
+  background-color: var(--Soft-Magenta);
+  color: #fff;
+  cursor: pointer;
+}
+.footer .fa-brands:hover {
+  color: var(--Soft-Magenta);
+  cursor: pointer;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media screen and (max-width: 576px) {
+  body {
+    background-image: url(images/bg-mobile.svg);
+    background-color: var(--Violet);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .header {
+    margin: 1.5rem 0 3rem 2.5rem;
+  }
+  .header img {
+    width: 100px;
+  }
+  .main {
+    flex-direction: column;
+  }
+  .right-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .left-section img {
+    width: 90vw;
+    height: 90%;
+    margin-left: 0;
+  }
+  .right-section h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 0 2rem;
+    text-align: center;
+  }
+  .right-section p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.9rem;
+    padding: 0.5rem 3rem;
+    text-align: center;
+  }
+  .btn {
+    height: 2rem;
+  }
+  .footer {
+    margin: 4rem 0 1rem 1.5rem;
+    justify-content: center;
+  }
+  .left-section img {
+    width: 80%;
+  }
+  .left-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
